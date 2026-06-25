@@ -338,14 +338,14 @@ public static void Print18(int n){
             System.out.print("");
         }
         //character
-        char ch="A"
+        char ch="A";
         int breakdown = (2*i+1)/2;
 
         for(int j=0; j<2*i+1; j++){
             System.out.print(ch);
 
             if(j<=breakdown){
-                ch++
+                ch++;
             }
         }
         //spaces
@@ -377,7 +377,7 @@ public static void Print19(int n){
     for(int i=0; i<n; i++){
         //stars
         for(int j=0; j<i;j++){
-            System.out.print("*")
+            System.out.print("*");
         }
         //spaces
         for(int j=0; j<spaces;j++){
@@ -385,7 +385,7 @@ public static void Print19(int n){
         }
         //stars
         for(int j=0; j<i;j++){
-            System.out.print("*")
+            System.out.print("*");
         }
         spaces= spaces+2;
         System.out.println();
@@ -397,7 +397,7 @@ public static void Print19(int n){
     for(int i=0; i<n; i++){
         //stars
         for(int j=0; j<i;j++){
-            System.out.print("*")
+            System.out.print("*");
         }
         //spaces
         for(int j=0; j<spaces;j++){
