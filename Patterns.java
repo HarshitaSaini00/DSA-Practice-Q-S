@@ -297,6 +297,172 @@ public static void Print16(int n){
     }
 }
 
+/*
+1      1       
+12    21 
+123  321  
+12344321      
+ */
+public static void Print17(int n){
+    int space = 2*(n-1);
+    for(int i=0; i<n; i++){
+        //numbers
+        for(int j=0; j<i; j++){
+            System.out.print(j);
+        }
+        //spaces
+        for(int j=1; j<space; j++){
+            System.out.print("");
+        }
+        //numbers
+        for(int j=0; j<i; j++){
+            System.out.print(j);
+        }
+        System.out.println();
+        space= space-2;
+    }
+}
+
+/*
+        A
+      A B A
+    A B C B A
+  A B C D C B A
+A B C D E D C B A
+   
+ */
+public static void Print18(int n){
+    for(int i=0; i<n; i++){
+        //spaces
+        for(int j=0; j<n-i; j++){
+            System.out.print("");
+        }
+        //character
+        char ch="A"
+        int breakdown = (2*i+1)/2;
+
+        for(int j=0; j<2*i+1; j++){
+            System.out.print(ch);
+
+            if(j<=breakdown){
+                ch++
+            }
+        }
+        //spaces
+        for(int j=0; j<n-i; j++){
+            System.out.print("");
+        }
+
+    }
+    System.out.println();
+}
+
+/*
+
+**********
+****  ****
+***    ***
+**      **
+*        *
+------------
+*        *
+**      **
+***    ***
+****  ****
+**********
+
+ */
+public static void Print19(int n){
+    int spaces=0;
+    for(int i=0; i<n; i++){
+        //stars
+        for(int j=0; j<i;j++){
+            System.out.print("*")
+        }
+        //spaces
+        for(int j=0; j<spaces;j++){
+            System.out.print("");
+        }
+        //stars
+        for(int j=0; j<i;j++){
+            System.out.print("*")
+        }
+        spaces= spaces+2;
+        System.out.println();
+
+        
+    }
+
+    int spaces1=8;
+    or(int i=0; i<n; i++){
+        //stars
+        for(int j=0; j<i;j++){
+            System.out.print("*")
+        }
+        //spaces
+        for(int j=0; j<spaces;j++){
+            System.out.print("");
+        }
+        //stars
+        for(int j=0; j<i;j++){
+            System.out.print("*")
+        }
+        spaces= spaces-2;
+        System.out.println();
+
+        
+    }
+}
+
+/*
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+ */
+
+public static void Print20(int n){
+    int spaces=2*n-2;
+
+    for(int i=0; i<2*n-1; i++){
+
+        int stars = i;
+
+        if(i>n){
+            stars = 2*n-i;
+        }
+
+        //stars
+        for(int j=0; j<stars;j++){
+            System.out.print("*");
+        }
+
+        //spaces
+        for(int j=0; j<spaces; j++){
+            System.out.print("");
+        }
+
+        //stars
+        for(int j=0; j<stars;j++){
+            System.out.print("*");
+        }
+        System.out.println();
+
+        if(i<n){
+            spaces = spaces-2;
+        }
+        else{
+            spaces = spaces+2;
+        }
+
+    }
+}
+
 
     
     
@@ -356,6 +522,18 @@ public static void Print16(int n){
             System.out.println();
 
             Print16(n);
+            System.out.println();
+
+             Print17(n);
+            System.out.println();
+
+             Print18(n);
+            System.out.println();
+
+             Print19(n);
+            System.out.println();
+
+             Print20(n);
             System.out.println();
   
 
