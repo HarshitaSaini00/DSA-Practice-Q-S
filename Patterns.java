@@ -394,7 +394,7 @@ public static void Print19(int n){
     }
 
     int spaces1=8;
-    or(int i=0; i<n; i++){
+    for(int i=0; i<n; i++){
         //stars
         for(int j=0; j<i;j++){
             System.out.print("*")
