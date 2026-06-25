@@ -226,7 +226,7 @@ public class Patterns {
             for(char ch='A'; ch<='A'+i;ch++){
                 System.out.print(ch);
             }
-            System.out.println()
+            System.out.println();
 
         }
     }
