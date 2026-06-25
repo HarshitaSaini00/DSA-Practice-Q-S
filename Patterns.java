@@ -405,7 +405,7 @@ public static void Print19(int n){
         }
         //stars
         for(int j=0; j<i;j++){
-            System.out.print("*")
+            System.out.print("*");
         }
         spaces= spaces-2;
         System.out.println();
